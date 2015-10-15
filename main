@@ -1,0 +1,15 @@
+'''
+Health Assessment Calculator
+By Gino Colon 
+10/15/2015
+'''
+totalScore = 0  ##Total PAR-Q Score
+patientAge = int(input("How old are you? ")) ##Patient Age
+currentAnswer = 0 ##Temp variable to store the current answer.  Overwritten with each answer.  
+
+##Too young or old for the successful PAR-Q Test.  
+if patientAge > 69 or patientAge < 15:
+	print("Please consult with your doctor before performing vigorous physical activity.")
+
+##Start PAR-Q Test.
+else:
